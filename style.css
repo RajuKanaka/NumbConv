@@ -11,7 +11,7 @@ body {
 
   background-image: linear-gradient(
     90deg,
-    #845ec2,
+    #8b67c5,
     #d65db1,
     #ff6f91,
     #ff9671,
@@ -47,27 +47,28 @@ body {
   font-style: italic;
   background-image: linear-gradient(
     90deg,
-    #4b02c2,
-    #d12fa1,
-    #f63864,
-    #fb622a,
-    #ffaf1c,
-    #fbfb19
+    #5a17c7,
+    #cc0590,
+    #f81f51,
+    #f85013,
+    #fda90d,
+    #f8f80d
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
   padding: 2% 0;
-  animation: title-animation 7s ease infinite alternate;
+  animation: title-animation 10s ease infinite alternate;
   background-size: 400%;
+  background-position: right;
 }
-@keyframes Animation {
+@keyframes title-animation {
   0% {
-    background-position: left;
+    background-position: right;
   }
   100% {
-    background-position: right;
+    background-position: left;
   }
 }
 input {
