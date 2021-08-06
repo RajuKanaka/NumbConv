@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NUMCONV</title>
+  </head>
+  <body>
+    
+      <p>NUMBER SYSTEM CONVERSION</p>
+
+      <div class="selectNum">
+        <label for="cars">Form:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Binary</option>
+          <option value="saab">Octal</option>
+          <option value="opel">Decimal</option>
+          <option value="audi">HexaDecimal</option>
+        </select>
+        <label for="cars">To:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Binary</opti on>
+          <option value="saab">Octal</option>
+          <option value="opel">Decimal</option>
+          <option value="audi">HexaDecimal</option>
+        </select>
+        <br />
+    </div>
+    <div class="io">
+    <p>HexaDecimal To Decimal</p>
+        <label for="In">Hex value:</label>
+        <input id="in" type="text"/>
+        <p class="output"> Decimal value: <span id="outVal"></span></p>
+    </div>
+<div class="conexplain">
+      <p>Conversion Explaination</p>
+      <p id="Inval">hex:</p>
+      <p id="calc">1234</p>
+      <p id="outval">Decimal:</p>
+    </div>
+      <script src="./index.js"></script>
+  </body>
+</html>

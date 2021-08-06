@@ -1,0 +1,23 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    270deg,
+    #ff5b2e,
+    #e44a2e,
+    #c93a2d,
+    #ad2b29,
+    #921d25,
+    #77101f,
+    hsl(347, 90%, 19%)
+  );
+}
