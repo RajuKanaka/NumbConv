@@ -1,23 +1,76 @@
 * {
   margin: 0 0;
   padding: 0 0;
+  font-family: "Caveat", cursive, monospace;
   box-sizing: border-box;
 }
 body {
+  color: black;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background: linear-gradient(
-    270deg,
-    #ff5b2e,
-    #e44a2e,
-    #c93a2d,
-    #ad2b29,
-    #921d25,
-    #77101f,
-    hsl(347, 90%, 19%)
+
+  background-image: linear-gradient(
+    90deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
   );
+  background-size: 400%;
+  background-position: right;
+
+  animation: Animation 7s ease infinite alternate;
+}
+@keyframes Animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#title {
+  font-family: "Caveat", cursive, monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  background-image: linear-gradient(
+    90deg,
+    #4b02c2,
+    #d12fa1,
+    #f63864,
+    #fb622a,
+    #ffaf1c,
+    #fbfb19
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding: 2% 0;
+  animation: title-animation 7s ease infinite alternate;
+  background-size: 400%;
+}
+@keyframes Animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+input {
+  border: 0;
+  color: transparent;
 }
