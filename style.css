@@ -3,6 +3,8 @@
   padding: 0 0;
   font-family: "Caveat", cursive, monospace;
   box-sizing: border-box;
+  color: #310080;
+  font-size: 1.05rem;
 }
 body {
   color: black;
@@ -18,10 +20,10 @@ body {
     #ffc75f,
     #f9f871
   );
-  background-size: 400%;
+  background-size: 200%;
   background-position: right;
 
-  animation: Animation 15s ease infinite alternate;
+  animation: Animation 10s ease infinite alternate;
 }
 @keyframes Animation {
   0% {
@@ -33,11 +35,12 @@ body {
 }
 
 .container {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
 }
 #title {
@@ -74,4 +77,8 @@ body {
 input {
   border: 0;
   color: transparent;
+}
+.io,
+.conexplain {
+  text-align: center;
 }
