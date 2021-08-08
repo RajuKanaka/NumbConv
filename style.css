@@ -4,7 +4,6 @@
   font-family: "Caveat", cursive, monospace;
   box-sizing: border-box;
   color: #310080;
-  font-size: 1.05rem;
 }
 body {
   color: black;
@@ -23,7 +22,7 @@ body {
   background-size: 200%;
   background-position: right;
 
-  animation: Animation 10s ease infinite alternate;
+  animation: Animation ease infinite alternate;
 }
 @keyframes Animation {
   0% {
@@ -35,15 +34,19 @@ body {
 }
 
 .container {
-  height: 60vh;
+  height: 70vh;
+  width: 70vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
+  border: solid 1px #fff;
+  margin: 0 auto;
 }
 #title {
+  text-decoration: underline solid #310080;
   font-family: "Caveat", cursive, monospace;
   font-size: 1.3rem;
   font-weight: 900;
@@ -64,21 +67,26 @@ body {
   padding: 2% 0;
   animation: title-animation 10s ease infinite alternate;
   background-size: 400%;
-  /* background-position: ; */
 }
-/* @keyframes title-animation {
-  0% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  } */
 
 input {
   border: 0;
-  color: transparent;
+  background-color: transparent;
+  border-bottom: solid 1px #000;
+  width: max-content;
+}
+input:focus {
+  border: 0;
+  outline: 0;
 }
 .io,
 .conexplain {
   text-align: center;
+}
+select {
+  border: 0;
+  background-color: transparent;
+}
+.selectNum {
+  display: grid;
 }
