@@ -22,7 +22,7 @@ body {
   background-size: 200%;
   background-position: right;
 
-  animation: Animation ease infinite alternate;
+  animation: Animation 10s ease infinite alternate;
 }
 @keyframes Animation {
   0% {
@@ -39,11 +39,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  border: solid 1px #fff;
+  border: solid 1px #000;
   margin: 0 auto;
+  box-shadow: black 5px;
+  border-radius: 10px;
 }
 #title {
   text-decoration: underline solid #310080;
@@ -65,7 +67,7 @@ body {
   color: transparent;
   text-align: center;
   padding: 2% 0;
-  animation: title-animation 10s ease infinite alternate;
+  /* animation: title-animation 10s ease infinite alternate; */
   background-size: 400%;
 }
 
@@ -87,6 +89,22 @@ select {
   border: 0;
   background-color: transparent;
 }
-.selectNum {
-  display: grid;
+
+select {
+  display: inline-block;
+}
+#conFrom {
+  margin-bottom: 1vh;
+}
+.io {
+  margin-bottom: 4vh;
+}
+.io > p {
+  text-align: initial;
+}
+#webExp {
+  font-weight: 520;
+}
+#title {
+  font-weight: bold;
 }
