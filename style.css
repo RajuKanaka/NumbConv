@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0 0;
   padding: 0 0;
   font-family: "Caveat", cursive, monospace;
@@ -68,7 +68,7 @@ body {
   text-align: center;
   padding: 2% 0;
   /* animation: title-animation 10s ease infinite alternate; */
-  background-size: 400%;
+background-size: 400%;
 }
 
 input {
@@ -107,4 +107,4 @@ select {
 }
 #title {
   font-weight: bold;
-}
+} 
